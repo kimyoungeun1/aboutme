@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+}
+
+header>.container{
+	position: relative;
+	width: 1200px;
+	height: 66px;
+	margin: 0 auto;
+}
+
+header>.container>h1.logo{
+	position: absolute;
+	left: 30px;
+	top: 50%;	
+	width: 173px;
+	margin-top: -15px;
+	background-image: url(./../images/logo.png);
+}
+
+header>.container>h1.logo>a{
+	display: block;
+	height: 30px;
+	text-indent: -9999px;
+}
+
+
+header>.container>nav{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -15px;
+}
+
+header>.container>nav>.gnb{
+	display: flex;
+}
+
+header>.container>nav>.gnb>li>a{
+	display: block;
+	height: 30px;
+	padding: 0 30px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+header>.container>nav>.gnb>li.on>a,
+header>.container>nav>.gnb>li:hover>a{
+	color: orange;
+}
+
+section>visual{
+	height: 600px;
+	margin-top: 66px;
+	text-indent: -9999px;
+	background-color: yellow;
+	background-image: url(./../images/visual.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+
+
+section>article{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 150px;
+}
+
+section>article.cont1{
+	height: 1000px;
+	text-align: center;
+	background-color:skyblue;
+}
+
+section>article.cont2{
+	height: 845px;
+	background-color: palegreen;
+}	
+
+section>article.cont3{
+	height: 800px;
+	background-color: bisque;
+	
+}
+
+section>article.cont4{
+	height: 600px;
+	background-color: darkkhaki;
+	
+}
+
+section>article.cont5{
+	height: 1000px;
+	background-color: aquamarine;
+	
+}
+
+footer>address{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 250px;
+	color: #fff;
+	background-color: #222;
+}
+
+
+aside>.top{
+	display: block;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+aside>.top:hover{background-color: #dedede;}
+
+aside>.top:after{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	margin: -15px 0 0 -10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent orange transparent;
+	content: '';
+}
